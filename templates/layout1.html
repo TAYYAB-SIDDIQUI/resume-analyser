@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/layout1.css') }}">
+</head>
+<body>
+
+        <form class="lab" action="/data"  enctype="multipart/form-data" method="post">
+            <div class="leftback">
+                <input  type="file" name="file" class="pathi" accept="image/*">
+                <p style="margin-top: 0; margin-bottom: 0;"></p>
+                <label for="" class="Leftlabel">Phone </label>
+                <p class="designlinelab"></p>
+                <textarea  placeholder="phone" rows="1" id="phone" name="phone" class="phi" required></textarea>
+                <label for="" class="Leftlabel">Email </label>
+                <p class="designlinelab"></p>
+                <textarea  placeholder="email" id="email" name="email" class="emi" required></textarea>
+                <label for="" class="Leftlabel">Skill</label>
+                <p class="designlinelab"></p>
+                <textarea  placeholder="skill" id="skill" name="skill" class="ski"></textarea>
+                <label for="" class="Leftlabel">Language</label>
+                <p class="designlinelab"></p>
+                <textarea  placeholder="language" id="language" name="language" class="lgi"></textarea>
+            </div>
+            <div class="rightback">
+                <input type="text" id="name"  name="name" class="nmi" required></input>
+                <textarea name="links" id="links" placeholder="www.youlink.com,linkname(github,linkedin etc)" class="linki"></textarea>
+                <label for="" class="rightdesign">Experience </label>
+                <p class="designline"></p>
+                <textarea placeholder="experience" id="experience" name="experience" class="expi"></textarea>
+                <label for="" class="rightdesign">Projects </label>
+                <p class="designline"></p>
+                <textarea placeholder="projects" id="projects" name="projects" class="pri"></textarea>
+                <label for="" class="rightdesign">Education </label>
+                <p class="designline"></p>
+                <textarea placeholder="education" id="education" name="education" class="edi"></textarea>
+                <input type="submit" value="Make resume" class="mkr">
+            </div>
+        </form>
+
+</body>
+</html>

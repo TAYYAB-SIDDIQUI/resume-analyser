@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello resume world</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <style>
+        .layout1{
+            background-image: url("{{ url_for('static',filename='images/Layoutaimg.PNG')}}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor:pointer;
+            border:  7px solid rgb(77, 76, 76);
+            box-shadow: 0 0 25px rgba(249, 250, 249, 0.5);
+            width: 95%;
+            height: 55%;
+            border-radius: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Service">Service</a></li>
+                <li><a href="Contacts">Contacts</a></li>
+                <li><a href="About">About</a></li>
+            </ul>
+        </nav>
+        <h1>Hello Resume World</h1>
+        <p class="headinglayout">Choose layouts</p>
+    <div>
+        <form action="/Layout1" method="get">
+            <button class="layout1"></button>
+        </form>
+        <form action="/Layout2" method="get">
+            <button class="layout1"></button>
+        </form>
+        <form action="/Layout3" method="get">
+            <button class="layout1"></button>
+        </form>
+        <form action="/Layout4" method="get">
+            <button class="layout1"></button>
+        </form>
+    </div>
+</body>
+</html>

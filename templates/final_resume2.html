@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+    <style>
+        .leftback {
+            display: flex;
+            align-content: stretch;
+            align-items: center;
+            justify-items: start;
+            background-color: rgb(75, 75, 149);
+            }
+        .rightback{
+            display: flex;
+            align-content: stretch;
+            justify-content: center;
+            align-items: stretch;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="lab" action="/data1"  enctype="multipart/form-data" method="post" style="text-align: center;">
+        <div class="leftback">
+            <div style="display: flex; flex-direction: column; padding-left: 7.5%;">
+                <label for="" class="Leftlabel" style="color: white; font-size: 20px; padding: 1.5%; margin-top: 5%;"><u>Phone</u></label>
+                <label class="phi" required style="width:100% ; font-size: 17px; margin-bottom: 5%; color: white;">{{ phone_info | safe}}</label>
+                <label for="" class="Leftlabel" style="color: white; font-size: 20px; padding: 1.5%;" ><u>Email</u></label>
+                <label class="emi" required style="font-size: 17px; height: 0%; width: 100%; margin-bottom: 5%; color: white;">{{email_info}}</label>
+            </div>
+            <div style="padding-left: 27.5%;">
+                <label class="nmi" required style="font-size: 40px; width: 100%; color: white;">{{ name_info | safe }}</label>   
+            </div>
+            <div style="margin-left: 25%;">
+                <img style="border-radius: 20px; margin: 5%; margin-left: 50%;" src="{{url_for('static',filename='uploads/'+img_info)}}" alt="l" class="pathi">
+            </div>    
+        </div>
+        <div style="padding-top: 1%; padding-bottom: 0.75%;">
+            <label  class="linkstyle" style="width: 75%;">{{links | safe}}</label>
+        </div>
+        <div class="rightback" style="height: 100%;">
+            
+            <div style="display: flex; flex-direction: column; padding-right: 2.5%; width: 20%;">
+                <label for="" class="Leftlabel" style="margin-top: 2%; font-size: 20px;"><u>Skill</u></label>
+                <label  class="ski" style="padding-bottom: 10%; font-size: 17px;">{{skill_info |safe}}</label>             
+            </div>
+            <div style="display: flex; flex-direction: column; padding-right: 2.5%; width: 60%;">
+                <label for="" class="rightdesign" style="font-size: 20px; margin-top: 0.5%;"><u>Experience </u></label>
+                <label class="expi" style="padding-bottom: 5%; font-size: 17px; width: 100%;">{{experience_info | safe}}</label>
+                <label for="" class="rightdesign" style="font-size: 20px; margin-top: 0.25%;"><u>Projects</u> </label>
+                <label class="pri" style="font-size: 17px; padding-bottom: 12%; font-size: 17px; width: 100%;">{{projects_info | safe}}</label>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 20%; padding-left: 1%;">
+                <label for="" class="Leftlabel" style="font-size: 20px; margin-top: 1.25%;"><u>Language </u></label>
+                <label class="lgi" style="font-size: 17px; width: 100%;">{{language_info | safe}}</label>
+                <label for="" class="rightdesign" style="font-size: 20px; margin-top: 10%;"><u>Education </u></label>
+                <label class="edi" style="font-size: 17px; width: 100%;">{{education_info |safe}}</label>
+            </div>   
+        </div>
+    </form>
+</body>
+</html>

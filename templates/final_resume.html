@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/final_resume.css') }}">
+</head>
+<body>
+
+        <form class="lab" action="/data" method="post">
+            <div class="leftback">
+                <img src="{{url_for('static',filename='uploads/'+img_info)}}" alt="l" class="pathi">
+                <p style="margin-top: 0; margin-bottom: 0;"></p>
+                <label for="" class="Leftlabel">phone</label>
+                <p class="designlinelab"></p>
+                <label id="phone" name="phone" class="phi">{{phone_info | safe}}</label>
+                <label for="" class="Leftlabel">Email </label>
+                <p class="designlinelab"></p>
+                <label   id="email" name="email" class="emi">{{email_info | safe}}</label>
+                <label for="" class="Leftlabel">Skill</label>
+                <p class="designlinelab"></p>
+                <label id="skill" name="skill" class="ski">{{skill_info | safe}}</label>
+                <label for="" class="Leftlabel">Language</label>
+                <p class="designlinelab"></p>
+                <label id="language" name="language" class="lgi">{{language_info | safe}}</label>
+            </div>
+            <div class="rightback">
+                <label type="text" class="nmi">{{name_info}}</label>
+                <p class="linkstyle">{{links | safe}}</p>
+                <label for="" class="rightdesign">Experience </label>
+                <p class="designline"></p>
+                <label id="experience" name="experience" class="expi">{{experience_info | safe }}</label>
+                <label for="" class="rightdesign">Projects </label>
+                <p class="designline"></p>
+                <label id="projects" name="projects" class="pri">{{projects_info |safe}}</label>
+                <label for="" class="rightdesign">Education </label>
+                <p class="designline"></p>
+                <label id="education" name="education" class="edi">{{education_info | safe}}</label>
+            </div>
+        </form>
+
+</body>
+</html>

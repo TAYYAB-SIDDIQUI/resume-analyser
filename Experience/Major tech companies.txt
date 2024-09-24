@@ -1,0 +1,400 @@
+Databricks
+Snowflake
+Palantir Technologies
+Cloudera
+Elastic
+Fivetran
+Domo
+Looker (now part of Google Cloud)
+Sisense
+ThoughtSpot
+Mode Analytics
+DataRobot
+H2O.ai
+Dataiku
+RapidMiner
+Alteryx
+Talend
+Qlik
+MicroStrategy
+Tableau Software
+TIBCO Software
+Informatica
+SAS Institute
+Teradata
+GoodData
+Trifacta
+Scribe
+StreamSets
+Dremio
+C3.ai
+Nutanix
+MongoDB
+Redis Labs
+Couchbase
+DataStax
+Kinetica
+Hadoop
+MapR
+Apache Spark
+Zepl
+Splice Machine
+Aureus Analytics
+GraphSQL
+Snowplow Analytics
+Rasa
+Unravel Data
+H2O.ai
+BigML
+Knewton
+Gong.io
+Crimson Hexagon
+Funnel.io
+InsightSquared
+RedPoint Global
+Pendo
+QuantConnect
+QuantHub
+Quantopian
+Quantexa
+Slyce
+Solace
+Spotinst
+Tecton
+Valohai
+Valytics
+Vicarious
+Mixpanel
+Amplitude
+Heap Analytics
+FullStory
+Sift Science
+Narrative Science
+Conversica
+Aible
+Logz.io
+Modzy
+BlueConic
+Chartio
+Paxata
+Nexla
+Gatsby
+Grouparoo
+Hivemind
+Horizon
+Lattice Engines
+Luminostics
+MachineMetrics
+Medius
+Metabase
+Metric Insights
+MoEngage
+Nexar
+Nexosis
+Onna
+Optimizely
+Oraculos
+Periscope Data
+Phantom
+Plenitude
+Prescriptive Analytics
+Amplitude
+Cohere
+DataBricks
+Datadog
+Dataminr
+DataRobot
+Dataiku
+DataCore
+Decodable
+Deepgram
+Deephaven
+Druid
+Enigma Technologies
+Etsy
+Fivetran
+Fluentd
+Funnel
+Gong.io
+GoodData
+Heap
+Helium
+Keen.io
+Klaviyo
+Kx Systems
+Lattice
+Manta
+Matillion
+MoData
+Nexla
+OmniSci
+Panoply
+Pivotal
+Plexure
+Qubole
+Rasa
+RudderStack
+Salesforce Einstein
+ScyllaDB
+Segment
+Sift
+Sigmoid
+Tecton
+TIBCO Spotfire
+TidalScale
+Toggl
+ThoughtSpot
+Trifacta
+Verta
+VWO
+Wit.ai
+Yugabyte
+Zaloni
+Zebrium
+Zocdoc
+Zscaler
+Zylo
+Airflow
+Algorithmia
+Apsalar
+AtScale
+Blendo
+BloomReach
+Captiv8
+Causal
+Chorus
+Clearbit
+Cortexica
+CrateDB
+DataBrew
+DataStax
+Delphix
+Eddify
+Exasol
+Explorium
+Falkor
+Gatsby
+Heka
+Integromat
+Keen
+Knowi
+Logz.io
+Metabase
+Mixpanel
+Nanonets
+Nexosis
+Numina
+Optimizely
+Pendo
+Periscope Data
+Presto
+QuantHub
+Rakam
+Refinery29
+SageMaker
+Sentry
+Shiny
+Sisense
+Smartling
+Socrata
+Splice Machine
+5GEdge
+Actian
+Advanced Analytics
+Alation
+Amplify
+Appen
+Aquila
+BigID
+BigPanda
+BlueConic
+Birst
+Blueshift
+Canoe
+Causal
+Chartio
+ClearStory Data
+Confluent
+ContentSquare
+Couchbase
+CrateDB
+Cybereason
+DataCamp
+DataDog
+DataFusion
+Dataiku
+Datastax
+Domo
+Eckerson Group
+EightyTwenty
+Endor
+Entytle
+Falkor
+Fluent
+Grouparoo
+H2O.ai
+Haptik
+Hivemind
+Hopper
+Kibana
+Klipfolio
+Kinetica
+Looker
+Loom Systems
+Machine Learning Platform
+MapR
+Metamind
+Minit
+Mixpanel
+MoEngage
+MuleSoft
+Nexar
+Nexla
+OpenAI
+Palantir Foundry
+Periscope Data
+Presto
+Protegrity
+Qlik Sense
+Quix
+Redash
+RedPoint Global
+RelationalAI
+Sailthru
+Scylla
+Segment
+Sift
+Simility
+Snowplow
+Socrata
+Starburst
+StreamSets
+Syngenta
+Tecton
+ThoughtSpot
+Transposit
+TrendKite
+Upstride
+UserTesting
+Valohai
+Verta
+Voximplant
+Weka.io
+Xplenty
+Zaloni
+Zebrium
+Zebulon
+ZenCity
+Zeta Global
+Zylo
+Airflow
+Algorithmia
+Aptitude
+Aureus
+Blendo
+Brighterion
+DataCamp
+DataFox
+DataRobot
+Domo
+Element AI
+Accellion
+ActionIQ
+Adverity
+Aible
+Algorithmia
+Amplify
+Anaconda
+Apigee
+Axiom
+BigML
+BigQuery
+BlastPoint
+Blendo
+Bodhi
+BrightFunnel
+C3.ai
+Couchbase
+Cresta
+DataBrew
+DataFox
+Dataiku
+DataLake
+DataRobot
+DataStax
+Deepgram
+DeepMind
+Domo
+Eloqua
+Emarsys
+Etsy
+Exasol
+Explorium
+Falkor
+Fivetran
+Fluentd
+FlyData
+Fractal Analytics
+Gatsby
+Grouparoo
+Hadoop
+H2O.ai
+Hivemind
+Hopper
+IBM SPSS
+Impact
+Integrate
+Iris.ai
+Keen
+Klaviyo
+Knowi
+Looker
+Loom Systems
+Matillion
+Meltwater
+Metabase
+Metric Insights
+Mixpanel
+MoEngage
+MuleSoft
+Nanonets
+Nexar
+Nexla
+Optimizely
+OpenAI
+Periscope Data
+Phantom
+Pimcore
+Presto
+Qubole
+Rasa
+Reonomy
+SageMaker
+Sailthru
+Salesforce Einstein
+ScyllaDB
+Segment
+Sift
+Sigmoid
+Spotinst
+Starburst
+StreamSets
+Syndigo
+Talend
+Tecton
+ThoughtSpot
+TIBCO Spotfire
+Trifacta
+Upstride
+Verta
+VWO
+Weka.io
+Xplenty
+Zaloni
+Zebrium
+ZenCity
+Zeta Global
+Zylo
+Acxiom
+Actian
+Blueshift

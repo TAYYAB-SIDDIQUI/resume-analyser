@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+    <style>
+        .leftback {
+            display: flex;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+            justify-items: center;
+            background-color: rgb(75, 75, 149);
+            }
+        .rightback{
+            display: flex;
+            align-content: stretch;
+            justify-content: center;
+            align-items: stretch;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="lab" action="/data"  enctype="multipart/form-data" method="post" style="text-align: center;">
+        <div class="leftback">
+            <div style="display: flex; flex-direction: column; padding-right: 15%;">
+                <label for="" class="Leftlabel" style="color: white; font-size: 18px; padding: 1.5%; margin-top: 5%;">Phone </label>
+                <textarea  placeholder="phone" rows="1" id="phone" name="phone" class="phi" required style="width:100% ; font-size: 15px; margin-bottom: 5%;"></textarea>
+                <label for="" class="Leftlabel" style="color: white; font-size: 18px; padding: 1.5%;" >Email </label>
+                <textarea  placeholder="email" id="email" name="email" class="emi" required style="font-size: 15px; height: 0%; width: 100%; margin-bottom: 5%;"></textarea>
+            </div>
+            <div style="padding-right: 15%;">
+                <input type="text" id="name"  name="name" class="nmi" required style="font-size: 30px; width: 100%;"></input>   
+            </div>
+            <div>
+                <input  type="file" name="file" class="pathi" accept="image/*">
+            </div>    
+        </div>
+        <textarea name="links" id="links" placeholder="www.youlink.com,linkname(github,linkedin etc)" class="linki" style="margin: 2%; width: 75%;"></textarea>
+        <div class="rightback" style="height: 100%;">
+            
+            <div style="display: flex; flex-direction: column; padding-right: 2.5%; width: 20%;">
+                <label for="" class="Leftlabel" style="margin-top: 2%; font-size: 20px;">Skill</label>
+                <textarea  placeholder="skill" id="skill" name="skill" class="ski" style="padding-bottom: 100%; font-size: 15px;"></textarea>             
+            </div>
+            <div style="display: flex; flex-direction: column; padding-right: 2.5%; width: 60%;">
+                <label for="" class="rightdesign" style="font-size: 20px; margin-top: 0.5%;">Experience </label>
+                <textarea placeholder="experience" id="experience" name="experience" class="expi" style="font-size: 15px; padding-bottom: 12%; font-size: 15px; width: 100%;"></textarea>
+                <label for="" class="rightdesign" style="font-size: 20px; margin-top: 2%;">Projects </label>
+                <textarea placeholder="projects" id="projects" name="projects" class="pri" style="font-size: 15px; padding-bottom: 12%; font-size: 15px; width: 100%;"></textarea>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 20%; padding-left: 1%;">
+                <label for="" class="Leftlabel" style="font-size: 20px; margin-top: 1.25%;">Language</label>
+                <textarea  placeholder="language" id="language" name="language" class="lgi" style="font-size: 15px; width: 100%; padding-bottom: 36%;"></textarea>
+                <label for="" class="rightdesign" style="font-size: 20px; margin-top: 6%;">Education </label>
+                <textarea placeholder="education" id="education" name="education" class="edi" style="font-size: 15px; width: 100%; padding-bottom: 35%;"></textarea>
+            </div>   
+        </div>
+        <input type="submit" value="Make resume" class="mkr" style="color: white; background-color: rgb(75, 75, 149); border-radius: 10px; font-size: 15px; padding: 0.5%; margin: 1.5%;">
+    </form>
+
+</body>
+</html>

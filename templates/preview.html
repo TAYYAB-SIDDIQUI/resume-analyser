@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preview resume</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column;">
+        <p >{{phonemessage | safe}}</p>
+        <p>{{emailmessage | safe}}</p>
+        <p>{{textmessage | safe}}</p>
+    </div>
+    <form action="/view" method="get">
+        <button>view</button>
+    </form>
+    <form action="/view1" method="get">
+        <button>view1</button>
+    </form>
+    <form action="/df" method="get">
+        <button>fetch Data</button>
+    </form>
+    <form action="/report" method="get">
+        <button>marksheet</button>
+    </form>
+    
+
+</body>
+</html>
