@@ -12,13 +12,28 @@
             background-position: center;
             background-repeat: no-repeat;
             cursor:pointer;
-            border:  7px solid rgb(77, 76, 76);
+            border:  5px solid rgb(77, 76, 76);
             box-shadow: 0 0 25px rgba(249, 250, 249, 0.5);
             width: 95%;
             height: 55%;
             border-radius: 0px;
             justify-content: center;
             align-items: center;
+        }
+        .layout2{
+            background-image: url("{{ url_for('static',filename='images/Layoutimg2.PNG')}}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor:pointer;
+            border:  5px solid rgb(77, 76, 76);
+            box-shadow: 0 0 25px rgba(249, 250, 249, 0.5);
+            width: 95%;
+            height: 55%;
+            border-radius: 0px;
+            justify-content: center;
+            align-items: center;
+        
         }
     </style>
 </head>
@@ -38,7 +53,7 @@
             <button class="layout1"></button>
         </form>
         <form action="/Layout2" method="get">
-            <button class="layout1"></button>
+            <button class="layout2"></button>
         </form>
         <form action="/Layout3" method="get">
             <button class="layout1"></button>

@@ -4,6 +4,7 @@ def training():
     from sklearn.model_selection import train_test_split,cross_val_score
     from sklearn.linear_model import LogisticRegression
     from sklearn.preprocessing import OrdinalEncoder
+    from imblearn.over_sampling import SMOTE
     from sklearn.metrics import mean_squared_error,classification_report
     df=pd.read_csv("Experience\experience.csv")
     df.dropna(inplace=True)
@@ -21,12 +22,14 @@ def training():
     df[df.columns[4]]=oe.fit_transform(np.array(df[df.columns[4]]).reshape(-1,1))
     df[df.columns[5]]=oe.fit_transform(np.array(df[df.columns[5]]).reshape(-1,1))
     df[df.columns[6]]=oe.fit_transform(np.array(df[df.columns[6]]).reshape(-1,1))
+    smore=SMOTE(random_state=42)
     x=df.drop(columns=["experience","Unnamed: 0"])
     print(x)
     y=df["experience"]
     x.dropna(inplace=True)
     y.dropna(inplace=True)
     x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=42,stratify=y)
+    x_train,y_train=smore.fit_resample(x_train,y_train)
     from sklearn.naive_bayes import GaussianNB
     nb=GaussianNB()
     nb.fit(x_train,y_train)
@@ -44,10 +47,11 @@ def training():
     dtc.fit(x_train,y_train)
     dtc_score="%.1f" % dtc.score(x_test,y_test)
     dtc_rmse="%.1f" % np.sqrt(mean_squared_error(y_test,dtc.predict(x_test)))
+    print(dtc_score,dtc_rmse)
     rfcl=RandomForestClassifier(n_estimators=100,random_state=42)
     rfcl.fit(x_train,y_train)
-    rfcl_rmse="%.1f" % np.sqrt(mean_squared_error(y_test,rfcl.predict(x_test)))
-    rfcl_score="%.1f" % rfcl.score(x_test,y_test)
+    rfcl_rmse= np.sqrt(mean_squared_error(y_test,rfcl.predict(x_test)))
+    rfcl_score= rfcl.score(x_test,y_test)
     print(rfcl_score,rfcl_rmse)
     from sklearn.neighbors import KNeighborsClassifier
     k=3
@@ -65,7 +69,6 @@ def training():
     print(rmse)
     print(dtc.score(x_test,y_test))
     joblib.dump(oe,"dtcoe.pkl")
-training()
 def mapping():
     import pandas as pd
     import numpy as np

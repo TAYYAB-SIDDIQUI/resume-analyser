@@ -191,7 +191,8 @@ def show():
 @app.route("/report")
 def marks():
     from plots import pltimg
-    path,percentage_exp=pltimg()
+    print("plotting")
+    percentage_exp,path=pltimg()
     return render_template("marksheet.html",plot_img="static/plots/firsts.png",ovr_exp=percentage_exp)
 if __name__=="__main__":
     if not os.path.exists(app.config['UPLOAD_FOLDER']):

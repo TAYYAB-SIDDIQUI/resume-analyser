@@ -6,7 +6,7 @@ def expmarks():
     from userData import DataofUser
     import numpy as np
     import pandas as pd
-    from fuzzywuzzy import process
+    from rapidfuzz import process
     import Levenshtein
 
     nltk.download("punkt")
@@ -92,7 +92,6 @@ def expmarks():
         print(jobs)
         print(job_level)
         print(years)
-
     test=pd.DataFrame({"company":company,
                     "company_level":comapany_level,
                     "jobs level":job_level,

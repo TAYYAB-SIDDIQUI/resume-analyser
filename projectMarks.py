@@ -3,7 +3,7 @@ def Marks():
     import numpy as np
     import pandas as pd
     import joblib
-    from fuzzywuzzy import process
+    from rapidfuzz import process
     df=DataofUser()
     countvector=joblib.load("CountVector.pkl")
     project_data=np.array(df["projects"])

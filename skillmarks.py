@@ -35,6 +35,9 @@ def skMarks():
     skillspoint=[]
     df=DataofUser()
     skillsofuser=df["skills"][0]
+    for i in skillsofuser:
+        skillsofuser.remove(i)
+        skillsofuser.append(i.lower())
     print(skillsofuser)
     skillkey=skills.keys()
     skillvalue=skills.values()
