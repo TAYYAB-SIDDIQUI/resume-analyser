@@ -1,8 +1,6 @@
-from flask import Flask,render_template,request,redirect,send_file
+from flask import Flask,render_template,request,redirect
 import os
-from io import BytesIO
 import matplotlib.pyplot as plt
-import base64
 app=Flask(__name__)
 app.secret_key="supersecretkey"
 app.config['UPLOAD_FOLDER']='static/uploads'
@@ -82,8 +80,6 @@ def data():
             element=i.split(",")
             link_url.append(element[0])
             link_name.append(element[1])
-            print(link_url)
-            print(link_name)
             url=[]
         for i in range(len(link_url)):
             html_texts=f'<a style="padding-right:4%;" href="https://{link_url[i]}" >{link_name[i]}</a>'
