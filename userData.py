@@ -37,7 +37,7 @@ def DataofUser():
     final_data=[]
     for i in data_phase2:
         for j in i:
-            if type(j)!=str:
+            if type(j)==str:
                 j=j.split("resumebreaker101")
                 final_data.append(j)
             else:
