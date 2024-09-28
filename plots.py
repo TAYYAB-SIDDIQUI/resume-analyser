@@ -23,6 +23,7 @@ def pltimg():
     plt.subplot(7,3,3)
     plt.pie(skillpoints)
     plt.legend(skillshave,loc="right",bbox_to_anchor=(-0.2,1))
+    plt.title("Overall Skill")
     plt.subplot(7,3,4)
     plt.pie(allskillpoints[0])
     plt.title(skillsnames[0])

@@ -5,9 +5,10 @@ def training():
     from sklearn.linear_model import LogisticRegression
     from sklearn.preprocessing import OrdinalEncoder
     from imblearn.over_sampling import SMOTE
-    from sklearn.metrics import mean_squared_error,classification_report
+    from sklearn.metrics import mean_squared_error,classification_report,confusion_matrix
     df=pd.read_csv("Experience\experience.csv")
     df.dropna(inplace=True)
+    print(df["experience"].value_counts())
     indexes=[i for i in range(len(df))]
     df=df.reindex(indexes)
     cols=[]
@@ -34,6 +35,7 @@ def training():
     nb=GaussianNB()
     nb.fit(x_train,y_train)
     nbscore=nb.score(x_test,y_test)
+    print(nbscore)
     lr=LogisticRegression()
     lr.fit(x_train,y_train)
     lrscore=lr.score(x_test,y_test)
@@ -41,6 +43,7 @@ def training():
     print(np.sqrt(mean_squared_error(y_test,lr.predict(x_test))))
     lrcoef=lr.coef_
     lr_rmse=np.sqrt(mean_squared_error(y_test,lr.predict(x_test)))
+    print(lr_rmse,lrscore)
     from sklearn.tree import DecisionTreeClassifier
     from sklearn.ensemble import RandomForestClassifier
     dtc=DecisionTreeClassifier()
@@ -62,7 +65,11 @@ def training():
     print(knn_score,knn_rmse)
     import joblib
     joblib.dump(dtc,"dtc.pkl")
+    import matplotlib.pyplot as plt
     print(np.sqrt(mean_squared_error(y_test,dtc.predict(x_test))))
+    import seaborn as sns
+    sns.heatmap(confusion_matrix(y_test,dtc.predict(x_test)))
+    plt.show()
     print((classification_report(y_test,dtc.predict(x_test))))
     cvs=cross_val_score(dtc,x,y,cv=5,scoring="neg_mean_squared_error")
     rmse=np.sqrt(-cvs)
