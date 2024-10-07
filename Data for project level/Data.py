@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from fuzzywuzzy import process
 txt_names=["beginner.txt","intermediate.txt","advance.txt","Expert.txt","Innovator.txt"]
 text_list=[]
 for i in txt_names: 
