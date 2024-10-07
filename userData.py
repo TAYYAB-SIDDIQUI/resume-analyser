@@ -33,15 +33,9 @@ def DataofUser():
         else:
             data_phase2.append([i])
         if [i] in data_phase2:
-            print("ho")
             continue
         else:
-            print("no")
             data_phase2.append([i])
-    #data_phase2.insert(0,[data_phase1[0]])
-    #data_phase2.insert(1,[data_phase1[1]])
-    #data_phase2.insert(2,[data_phase1[2]])
-    print("data 2",data_phase2)
     final_data=[]
     for i in data_phase2:
         for j in i:
