@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>preview resume</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            border: 3px solid;
+            border-width: 3px;
+            border-color: white;
+            border-radius: 10px;
+            font-size: 22.5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+    </style>
 </head>
-<body>
+<body style=" display: flex;
+ flex-direction: column; 
+ justify-content: center; 
+ align-items: center;
+ align-content: center;
+ gap: 50px;
+ background-color: black;
+ font-size: 20px;">
     <div style="display: flex; flex-direction: column;">
-        <p >{{phonemessage | safe}}</p>
-        <p>{{emailmessage | safe}}</p>
-        <p>{{textmessage | safe}}</p>
+        <p style="color: yellow;">{{phonemessage | safe}}</p>
+        <br>
+        <p style="color: yellow;">{{emailmessage | safe}}</p>
+        <br>
+        <p style="color: yellow;">{{textmessage | safe}}</p>
     </div>
     <form action="/view" method="get">
-        <button>view</button>
+        <button>Layout 1</button>
     </form>
     <form action="/view1" method="get">
-        <button>view1</button>
+        <button>layout 2</button>
     </form>
     <form action="/df" method="get">
         <button>fetch Data</button>
     </form>
     <form action="/report" method="get">
-        <button>marksheet</button>
+        <button>Report</button>
     </form>
-    
 
 </body>
 </html>

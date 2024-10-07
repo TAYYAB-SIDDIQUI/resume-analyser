@@ -54,6 +54,6 @@ model.compile(loss="categorical_crossentropy",
               optimizer="adam",
               metrics=["accuracy"])
 model.fit(x,y,epochs=50)
-#model.save("neunetforpr.h5")
+model.save("neunetforpr.h5")
 import joblib
-#joblib.dump(vector,"CountVector.pkl")
+joblib.dump(vector,"CountVector.pkl")

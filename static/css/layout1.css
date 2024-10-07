@@ -138,3 +138,145 @@ body{
     margin-bottom:2% ;
     height: 10%;
 }
+@media print {
+    body{
+        background-color: white;
+        margin-right: 0;
+        justify-content: flex-start;
+        display: flex;
+    }
+    .Leftlabel{
+        margin-left: 5%;
+        color: rgb(136, 200, 180);
+        font-size: 150%;
+    }
+    .lab{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .nmi{
+        font-size: 175%;
+        width: 75%;
+        margin-top: 2%;
+        margin-bottom: 2.5%;
+        margin-left: 5.5%;
+        height: 15%;
+    
+    }
+    .phi{
+        font-size: 20px;
+        width: 85%;
+        margin-left: 10px;
+        margin-bottom: 35px;
+        height: 20px;
+    }
+    .emi{
+        font-size: 20px;
+        width: 90%;
+        margin-left: 10px;
+        margin-bottom: 35px;
+        height: 20px;
+    }
+    .ski{
+        font-size: 20px;
+        width: 85%;
+        margin-left: 10px;
+        margin-bottom: 35px;
+        height: 100px;
+    }
+    .lgi{
+        font-size: 20px;
+        width: 85%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        height: 60px;
+    }
+    .expi{
+        width: 90%;
+        font-size: 150%;
+        margin-left: 5.5%;
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        height: 20%;
+    }
+    
+    .pri{
+        width: 90%;
+        font-size: 150%;
+        margin-left: 5.5%;
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        height: 15%;
+    }
+    .edi{
+        width: 90%;
+        font-size: 150%;
+        margin-left: 5.5%;
+        margin-top: 0.5%;
+        margin-bottom:2% ;
+        height: 15%;
+    }
+    .mkr{
+        width: 160px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #00ffff;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 7pxpx;
+    }
+    .designline{
+        background-color: rgb(25, 90, 71);
+        height: 5px;
+        width: 60%;
+        margin-left: 5.5%;
+        margin-top: 1%;
+        margin-bottom: 0.8%;
+    }
+    .designlinelab{
+        background-color: white;
+        height: 2.5px;
+        width: 60%;
+        margin-left: 5%;
+        margin-top: 1.5%;
+        margin-bottom: 2.5%;
+    }
+    .pathi{
+        
+        width: 60%;
+        height: 120px;
+        margin-top: 2.5%;
+        margin-left: 20%;
+        justify-content: center;
+    }
+    
+    .rightdesign{
+        margin-top: 6px;
+        color:black;
+        font-size: 150%;
+        margin-left: 5.5%;
+    }
+    .leftback{
+        background-color: rgb(25, 90, 71);
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+    }
+    .rightback{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+    .imageform{
+        width: 100%;
+    }
+    .linki{
+        width: 90%;
+        font-size: 100%;
+        margin-left: 5.5%;
+        margin-top: 0.5%;
+        margin-bottom:2% ;
+        height: 10%;
+    }
+}
