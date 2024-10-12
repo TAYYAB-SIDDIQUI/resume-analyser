@@ -117,16 +117,20 @@ def expmarks():
             print(exp)
             print(exp[0])
             print(exp[0][0])
+    print("exp",list(exp[-1]))
+    print("np",np.array(exp[-1]))
+    explist=list(exp[-1])
     expintext=[]
-    for i in exp[0]:
+    for i in explist:
         if i==2 or i==2.0:
             expintext.append("Good")
         elif i==1 or i==1.0:
             expintext.append("Excellent")
         elif i==0 or i==0.0 :
             expintext.append("Very Good")
+    print(expintext)
     exp_level=[]
-    for i in exp[0]:
+    for i in explist:
         if i==2 or i==2.0:
             exp_level.append(1.0)
         elif i==1 or i==1.0:
@@ -135,4 +139,5 @@ def expmarks():
             exp_level.append(2.0)
         elif i==-1 or i==-1.0:
             exp_level.append(0.0)
+    print(exp_level)
     return company,jobs,expintext,exp_level

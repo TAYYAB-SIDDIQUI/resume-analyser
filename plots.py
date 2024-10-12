@@ -6,6 +6,7 @@ def pltimg():
     import os
     comapny,job,exp,lvl=expmarks()
     skillsnames,skillshave,skillpoints,allskillpoints=skMarks()
+    print("level",lvl)
     exp_sum=sum(lvl)
     if exp_sum>3:
         exp_sum=3
@@ -13,14 +14,16 @@ def pltimg():
     global percentage_exp
     percentage_exp=f"{(exp_sum/3)*100 :.2f}%"
     pr,lb,lv=Marks()
-    plt.figure(figsize=(15,20))
+    plt.figure(figsize=(17.5,25))
     plt.subplot(7,3,1)
     plt.bar(job,lvl)
     plt.title("Experience")
+    plt.xticks(rotation=12.5)
     plt.yticks([1,2,3,4],["good","very good","excellent",""])
     plt.subplot(7,3,2)
     plt.bar(pr,lv)
     plt.title("Projects")
+    plt.xticks(rotation=12.5)
     plt.yticks([1,2,3,4,5,6],["beginner","intermediate","advance","expert","innovator",""])
     plt.subplot(7,3,3)
     plt.pie(skillpoints)
